@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: rgb(37, 37, 37);
+    height: 100vh;
+    width: 100%;
+}
+.timer{
+    margin-top: 5%;
+    width: 50%;
+    height: 25%;
+    border-radius: 30px;
+    background: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.timer input{
+    font-size: 2em;
+    width: 20%;
+    padding: 2px;
+    border-radius: 10px;
+    border: none;
+    background: #e2dbdb;
+    outline: none;
+    text-align: center;
+    transition: 0.25s;
+}
+h2{
+    margin-top: 40px;
+    font-size: 2.8em;
+    font-family: 'Courier New', Courier, monospace;
+}
+@keyframes bounce {
+    20%, 50%, 80% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
